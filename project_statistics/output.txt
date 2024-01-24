@@ -1,0 +1,214 @@
+	One Sample t-test
+
+data:  results[[i]][[1]]
+t = 23.769, df = 49, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 3.964875 4.697213
+sample estimates:
+mean of x 
+ 4.331044 
+
+
+	One Sample t-test
+
+data:  results[[i]][[2]]
+t = 1.6825, df = 49, p-value = 0.09883
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ -0.03916893  0.44214642
+sample estimates:
+mean of x 
+0.2014887 
+
+
+	Welch Two Sample t-test
+
+data:  results[[i]][[2]] and results[[i]][[1]]
+t = -18.939, df = 84.675, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -4.563107 -3.696004
+sample estimates:
+mean of x mean of y 
+0.2014887 4.3310440 
+
+
+	One Sample t-test
+
+data:  results[[i]][[1]]
+t = 202.22, df = 49, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 18.18751 18.55261
+sample estimates:
+mean of x 
+ 18.37006 
+
+
+	One Sample t-test
+
+data:  results[[i]][[2]]
+t = 30.513, df = 49, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 7.672420 8.754287
+sample estimates:
+mean of x 
+ 8.213354 
+
+
+	Welch Two Sample t-test
+
+data:  results[[i]][[2]] and results[[i]][[1]]
+t = -35.751, df = 60.018, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -10.724969  -9.588436
+sample estimates:
+mean of x mean of y 
+ 8.213354 18.370056 
+
+
+	One Sample t-test
+
+data:  results[[i]][[1]]
+t = 585.61, df = 49, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 19.84591 19.98259
+sample estimates:
+mean of x 
+ 19.91425 
+
+
+	One Sample t-test
+
+data:  results[[i]][[2]]
+t = 75.776, df = 49, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 10.17740 10.73191
+sample estimates:
+mean of x 
+ 10.45466 
+
+
+	Welch Two Sample t-test
+
+data:  results[[i]][[2]] and results[[i]][[1]]
+t = -66.572, df = 54.932, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -9.744371 -9.174820
+sample estimates:
+mean of x mean of y 
+ 10.45466  19.91425 
+
+
+	One Sample t-test
+
+data:  results[[i]][[1]]
+t = 10.059, df = 49, p-value = 1.656e-13
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 0.6483088 0.9720170
+sample estimates:
+mean of x 
+0.8101629 
+
+
+	One Sample t-test
+
+data:  results[[i]][[2]]
+t = 1.2276, df = 49, p-value = 0.2255
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ -0.0003182545  0.0013175466
+sample estimates:
+   mean of x 
+0.0004996461 
+
+
+	Welch Two Sample t-test
+
+data:  results[[i]][[2]] and results[[i]][[1]]
+t = -10.053, df = 49.003, p-value = 1.69e-13
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.9715192 -0.6478073
+sample estimates:
+   mean of x    mean of y 
+0.0004996461 0.8101628757 
+
+
+	One Sample t-test
+
+data:  results[[i]][[1]]
+t = 16.691, df = 49, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 24085.65 30679.37
+sample estimates:
+mean of x 
+ 27382.51 
+
+
+	One Sample t-test
+
+data:  results[[i]][[2]]
+t = 4.8706, df = 49, p-value = 1.204e-05
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 13.82585 33.24803
+sample estimates:
+mean of x 
+ 23.53694 
+
+
+	Welch Two Sample t-test
+
+data:  results[[i]][[2]] and results[[i]][[1]]
+t = -16.676, df = 49.001, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -30655.85 -24062.10
+sample estimates:
+  mean of x   mean of y 
+   23.53694 27382.51246 
+
+
+	One Sample t-test
+
+data:  results[[i]][[1]]
+t = 25.494, df = 49, p-value < 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 246019.2 288122.3
+sample estimates:
+mean of x 
+ 267070.8 
+
+
+	One Sample t-test
+
+data:  results[[i]][[2]]
+t = 8.4287, df = 49, p-value = 4.255e-11
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 38.62524 62.80939
+sample estimates:
+mean of x 
+ 50.71731 
+
+
+	Welch Two Sample t-test
+
+data:  results[[i]][[2]] and results[[i]][[1]]
+t = -25.49, df = 49, p-value < 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -288071.6 -245968.5
+sample estimates:
+   mean of x    mean of y 
+    50.71731 267070.76854 
