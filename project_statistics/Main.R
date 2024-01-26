@@ -24,21 +24,21 @@ GA <- function(min_func){
                           mutator = setup(mutGauss, lower = getLowerBoxConstraints(min_func), upper = getUpperBoxConstraints(min_func)))$best.y)
 }
 
-compare_algorithms <- function(f, dim){
+compare <- function(f, dim){
   f1<-f(dim)
   PRS_RES <- replicate(50,PRS(f1,dim, 1000))
   GA_RES <- replicate(50, GA(f1))
   return(list(PRS_RES,GA_RES))
 }
-ackley_2d_results <- compare_algorithms(makeAckleyFunction, 2)
-ackley_10d_results <- compare_algorithms(makeAckleyFunction, 10)
-ackley_20d_results <- compare_algorithms(makeAckleyFunction, 20)
+ackley_2d_results <- compare(makeAckleyFunction, 2)
+ackley_10d_results <- compare(makeAckleyFunction, 10)
+ackley_20d_results <- compare(makeAckleyFunction, 20)
 
 ackley_results<-list(ackley_2d_results,ackley_10d_results,ackley_20d_results)
 
-rosenbrock_2d_results<-compare_algorithms(makeRosenbrockFunction, 2)
-rosenbrock_10d_results<-compare_algorithms(makeRosenbrockFunction, 10)
-rosenbrock_20d_results<-compare_algorithms(makeRosenbrockFunction, 20)
+rosenbrock_2d_results<-compare(makeRosenbrockFunction, 2)
+rosenbrock_10d_results<-compare(makeRosenbrockFunction, 10)
+rosenbrock_20d_results<-compare(makeRosenbrockFunction, 20)
 
 rosenbrock_results<-list(rosenbrock_2d_results,rosenbrock_10d_results,rosenbrock_20d_results)
 

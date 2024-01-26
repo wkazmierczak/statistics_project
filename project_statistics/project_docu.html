@@ -437,7 +437,7 @@ makeRosenbrockFunction</p>
 Ackleya i Rosenbrocka i n=1000 ( tutaj nazwane budżetem) Następnie
 porównujemy je w wymiarach 2,10 i 20 szukając w nich średnich wyników
 poprzez wykonanie nie mniej niż 50 wywołań każdej.</p>
-<pre class="r"><code>compare_algorithms &lt;- function(f, dim){
+<pre class="r"><code>compare &lt;- function(f, dim){
   f1&lt;-f(dim)
   PRS_RES &lt;- replicate(50,PRS(f1,dim, 1000))
   GA_RES &lt;- replicate(50, GA(f1))
@@ -777,7 +777,7 @@ działania.</p>
 <p>Z wykresów oraz obliczeń wynika że “lepszą” metodą jest algorytm
 gentyczny. Gdyż w odróżnieniu od PRS (Pure Random Search) poprzez swoją
 specyfikę działania sukcesywnie idąć po malejących wartościach z wyniki
-otrzmene dzięki niemy są bliższe tym domniemanym, oczekiwanym. PRS
+otrzmene dzięki niemu są bliższe tym domniemanym, oczekiwanym. PRS
 działa zupełnie losowo dlatego też jest bardziej podatny na większe
 pomyłki co do domniemanego minimum globalnego.</p>
 </div>

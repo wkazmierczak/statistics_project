@@ -90,7 +90,7 @@ Natomiast my posługiwać będziemy sie wbudowaną w R funkcją makeRosenbrockFu
 Za pomocą podanych wcześnie metod wyszukujemy minima dla funkcji Ackleya i Rosenbrocka i n=1000 ( tutaj nazwane budżetem) Następnie porównujemy je w wymiarach 2,10 i 20 szukając w nich średnich wyników poprzez wykonanie nie mniej niż 50 wywołań każdej.
 
 ```{r}
-compare_algorithms <- function(f, dim){
+compare <- function(f, dim){
   f1<-f(dim)
   PRS_RES <- replicate(50,PRS(f1,dim, 1000))
   GA_RES <- replicate(50, GA(f1))
@@ -585,4 +585,4 @@ Z wszystkich wykonanych testów dla dwóch próbek (Welch Two Sample t-test) wsz
 
 Jeśli chodzi o wartości otrzymane przez algorytmy, to te uzyskano po działaniu PRS mają znacznie większy rozstęp międzykwartylowy natomiast te uzyskane dzięki GA są dużo bardziej skupione przy jednej wartości. Taki wynik algorytmów zgadza się z intuicją uwzględniając ich sposób działania.
 
-Z wykresów oraz obliczeń wynika że "lepszą" metodą jest algorytm gentyczny. Gdyż w odróżnieniu od PRS (Pure Random Search) poprzez swoją specyfikę działania sukcesywnie idąć po malejących wartościach z wyniki otrzmene dzięki niemy są bliższe tym domniemanym, oczekiwanym. PRS działa zupełnie losowo dlatego też jest bardziej podatny na większe pomyłki co do domniemanego minimum globalnego.
+Z wykresów oraz obliczeń wynika że "lepszą" metodą jest algorytm gentyczny. Gdyż w odróżnieniu od PRS (Pure Random Search) poprzez swoją specyfikę działania sukcesywnie idąć po malejących wartościach z wyniki otrzmene dzięki niemu są bliższe tym domniemanym, oczekiwanym. PRS działa zupełnie losowo dlatego też jest bardziej podatny na większe pomyłki co do domniemanego minimum globalnego.
