@@ -46,23 +46,9 @@ dims<- c(2,10,20)
 histograms_violins<-function(results,name){
   for(i in 1:3){
     h1<-sprintf("Histogram PRS dla funkcji %s dla %s wymiarów",name, dims[[i]])
-    v1<-sprintf("Wykres Skrzypcowy PRS dla funkcji %s dla %s wymiarów",name, dims[[i]])
     h2<-sprintf("Histogram GA dla funkcji %s dla %s wymiarów",name, dims[[i]])
-    v2<-sprintf("Wykres Skrzypcowy GA dla funkcji %s dla %s wymiarów",name, dims[[i]])
     hist(results[[i]][[1]], main = h1, xlab = "Zakresy minimów", ylab = "Ilość minimów")
     hist(results[[i]][[2]], main = h2, xlab = "Zakresy minimów", ylab = "Ilość minimów")
-    df_PRS <- data.frame(Algorithm = rep("PRS", length(results[[i]][[1]])), Values = results[[i]][[1]])
-    df_GA <- data.frame(Algorithm = rep("GA", length(results[[i]][[2]])), Values = results[[i]][[2]])
-    print(ggplot() +
-      geom_violin(data = df_PRS, aes(x = Algorithm, y = Values, fill = Algorithm), scale = "width", draw_quantiles = c(0.25, 0.5, 0.75)) +
-      labs(title = v1) +
-      theme_minimal() +
-      coord_flip())
-    print(ggplot() +
-      geom_violin(data = df_GA, aes(x = Algorithm, y = Values, fill = Algorithm), scale = "width", draw_quantiles = c(0.25, 0.5, 0.75)) +
-      labs(title = v2) +
-      theme_minimal() +
-      coord_flip())
     boxplot(list(results[[i]][[1]], results[[i]][[2]]), main = sprintf("Porównanie PRS oraz GA dla funkcji %s w %s wymiarach",name, dims[[i]]),
             names = c("PRS", "GA"), ylab = "Zakres minimów")
     
